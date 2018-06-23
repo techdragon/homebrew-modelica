@@ -71,9 +71,11 @@ class Openmodelica < Formula
 end
 
 __END__
+diff --git a/common/m4/qmake.m4 b/common/m4/qmake.m4
+index 3a3c254..f82868c 100644
 --- a/common/m4/qmake.m4
 +++ b/common/m4/qmake.m4
-@@ -35,6 +35,7 @@ if test -n "$QMAKE"; then
+@@ -35,6 +35,7 @@
      echo 'cat $MAKEFILE | \
        sed "s/-arch i386//g" | \
        sed "s/-arch x86_64//g" | \
