@@ -82,13 +82,13 @@ EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ACTIVE_ARCHS), $(EXPORT_ACTIVE_
 
 to strip the arch related flags, it is necessary to remove the "-arch $(arch)" part.
 ---
- m4/qmake.m4 | 1 +
+ m4/common/qmake.m4 | 1 +
  1 file changed, 1 insertion(+)
 
-diff --git a/m4/qmake.m4 b/m4/qmake.m4
+diff --git a/common/m4/qmake.m4 b/common/m4/qmake.m4
 index 3a3c254..f82868c 100644
---- a/m4/qmake.m4
-+++ b/m4/qmake.m4
+--- a/common/m4/qmake.m4
++++ b/common/m4/qmake.m4
 @@ -42,6 +42,7 @@ if test -n "$QMAKE"; then
      echo 'cat $MAKEFILE | \
        sed "s/-arch@<:@\\@:>@* i386//g" | \
