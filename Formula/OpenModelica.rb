@@ -83,4 +83,3 @@ index ae9f707..d24d82d 100644
        sed "s/-arch//g" | \
        sed "s/-Xarch@<:@^ @:>@*//g" > $MAKEFILE.fixed && \
        mv $MAKEFILE.fixed $MAKEFILE' >> qmake.sh
-
