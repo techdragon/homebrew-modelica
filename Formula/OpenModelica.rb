@@ -73,10 +73,10 @@ end
 __END__
 --- a/common/m4/qmake.m4
 +++ b/common/m4/qmake.m4
-@@ -42,6 +42,7 @@ if test -n "$QMAKE"; then
+@@ -35,6 +35,7 @@ if test -n "$QMAKE"; then
      echo 'cat $MAKEFILE | \
-       sed "s/-arch@<:@\\@:>@* i386//g" | \
-       sed "s/-arch@<:@\\@:>@* x86_64//g" | \
+       sed "s/-arch i386//g" | \
+       sed "s/-arch x86_64//g" | \
 +      sed "s/-arch \$(arch)//g" | \
        sed "s/-arch//g" | \
        sed "s/-Xarch@<:@^ @:>@*//g" > $MAKEFILE.fixed && \
